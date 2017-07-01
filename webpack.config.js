@@ -74,7 +74,7 @@ module.exports = {
             // The (\\|\/) piece accounts for path separators in *nix and Windows
             /angular(\\|\/)core(\\|\/)@angular/,
             path.resolve(__dirname, 'source'),
-            {} // a map of your routes
+            {}
         ),
         new webpack.optimize.CommonsChunkPlugin({
             name : [ 'app', 'vendor', 'polyfills' ]
