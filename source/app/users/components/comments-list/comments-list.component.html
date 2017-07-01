@@ -1,0 +1,22 @@
+<md-grid-list cols="1" rowHeight="200px">
+    <md-grid-tile *ngFor="let comment of comments" [colspan]="1" [rowspan]="1">
+
+        <md-card>
+
+            <md-card-header>
+                <md-card-title>{{ comment.name }}</md-card-title>
+                <md-card-title><a href="/">{{ comment.email }}</a></md-card-title>
+            </md-card-header>
+
+            <md-card-content>
+                <p>{{ comment.body }}</p>
+            </md-card-content>
+
+        </md-card>
+
+    </md-grid-tile>
+</md-grid-list>
+
+<div class="button-wrapper">
+    <button md-raised-button (click)="goToUsersList()">Back to users</button>
+</div>

@@ -1,0 +1,21 @@
+<md-grid-list cols="2" rowHeight="150px">
+    <md-grid-tile *ngFor="let post of posts" [colspan]="1" [rowspan]="1">
+
+        <md-card>
+
+            <md-card-header>
+                <md-card-title><a [href]="'/comments-list/' + post.id">{{ post.title }}</a></md-card-title>
+            </md-card-header>
+
+            <md-card-content>
+                <p>{{ post.body }}</p>
+            </md-card-content>
+
+        </md-card>
+
+    </md-grid-tile>
+</md-grid-list>
+
+<div class="button-wrapper">
+    <button md-raised-button (click)="goToUsersList()">Back to users</button>
+</div>
