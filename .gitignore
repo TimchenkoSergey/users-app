@@ -1,6 +1,5 @@
 node_modules
 .idea
 *.log
-*.js
 *.css
 build/
